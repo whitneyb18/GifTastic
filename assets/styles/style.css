@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Open+Sans+Condensed:300|Oswald|Poller+One|Roboto+Condensed");
+body {
+  background-image: url(https://pre00.deviantart.net/67f8/th/pre/i/2014/134/e/b/coruscant__2_by_daroz-d7idgv0.jpg);
+  background-size: cover;
+}
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  color: #10d0ee;
+}
+.addTrain {
+  margin: 20px;
+}
+.main-header {
+  background-color: black;
+}
+.container1 {
+  width: 90%;
+  margin: auto;
+}
+.addTrainForm {
+  background-color: transparent;
+}
+label {
+  color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000;
+}
+.bg-dark {
+  background-color: blue;
+}
+p {
+  font-size: 70px;
+}
+button {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: lightgray;
+}
+.funBackground {
+  background-color: #002a32;
+  color: #10d0ee;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+}
+th {
+  background-color: #544146;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+tr {
+  background-color: whitesmoke;
+  font-size: 36px;
+  text-align: center;
+  border-bottom: 3px #544146 solid;
+  font-family: "Open Sans Condensed", sans-serif;
+}

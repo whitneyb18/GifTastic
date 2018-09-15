@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shuttle Schedule</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container1">
+        <div class="jumbotron main-header">
+            <h1 class="text-center">Shuttle Schedule</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card addTrainForm">
+                    <div class="card-header funBackground">
+                        Add Shuttle
+                    </div>
+                    <form class="addTrain">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Shuttle Name</label>
+                            <input type="text" class="form-control" id="trainName">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Destination</label>
+                            <input type="text" class="form-control" id="trainDestination">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">First Shuttle Time (Military Time hh:mm)</label>
+                            <input type="text" class="form-control" id="firstTrainTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Frequency (min)</label>
+                            <input type="text" class="form-control" id="trainFrequency">
+                        </div>
+                        <button type="submit" id="addingTrain" class="btn btn-block">Submit</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="card addTrainForm">
+                    <div class="card-header funBackground">
+                        Shuttles in Operation
+                    </div>
+                    <table id="table-data" class="table">
+                        <tbody>
+                            <thead>
+                                <th scope="col">Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival (min)</th>
+                                <th scope="col">Minutes Away</th>
+                            </thead>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
